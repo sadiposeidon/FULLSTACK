@@ -1,0 +1,8 @@
+display: flex;            /* Flexbox aktivləşdirmək */
+justify-content: center;  /* Üfüqi mərkəzləşdirmək */
+align-items: center;      /* Şaquli mərkəzləşdirmək */
+flex-wrap: wrap;          /* Elementləri sətirə keçirmək */
+position: relative;       /* Mövqeləndirmə */
+top: 10px; left: 20px;    /* Yerdəyişmə */
+z-index: 10;              /* Lay sırası */
+gap: 10px; 		  /* elementlər arası boşluq */

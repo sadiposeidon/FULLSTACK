@@ -1,0 +1,5 @@
+color: #333;               		/* Mətn rəngi */
+background-color: #f2f2f2; 		/* Arxa fon rəngi */
+background-image: url('./image.jpg'); 	/* Arxa fon şəkli */
+background-size: cover;    		/* Şəkli ekrana uyğunlaşdırır */
+opacity: 0.8;              		/* Şəffaflıq dərəcəsi */

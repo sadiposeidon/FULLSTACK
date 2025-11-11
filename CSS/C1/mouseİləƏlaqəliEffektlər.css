@@ -1,0 +1,25 @@
+/* Hover (üzərinə gələndə) */
+button:hover, a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Active (klik ediləndə) */
+button:active {
+  transform: scale(0.98);
+  background-color: #004080;
+}
+
+/* Tooltip nümunəsi */
+.tooltip:hover::after {
+  content: "Məlumat üçün kliklə!";
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  top: -35px;
+  left: 0;
+  font-size: 12px;
+}

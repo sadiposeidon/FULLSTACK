@@ -1,0 +1,7 @@
+width: 100%;       	 /* Elementin eni */
+height: auto;      	 /* Hündürlüyü avtomatik */
+margin: 20px;      	 /* Xarici boşluq */
+padding: 10px;     	 /* Daxili boşluq */
+border: 1px solid #ccc;  /* Sərhəd (çərçivə) */
+border-radius: 8px;      /* Küncləri yumrulamaq */
+box-sizing: border-box;  /* Padding və border daxilə daxil olur */

@@ -1,0 +1,12 @@
+font-family: 'Arial', sans-serif;     /* Şrift növü */
+font-family: 'Poppins', sans-serif;   /* Şrift növü */
+
+font-size: 16px;                      /* Şrift ölçüsü */
+
+font-weight: bold;                    /* Qalın mətn */
+font-weight: 500;		      /* Mətn ölçüsü */
+
+text-align: center;                   /* Mətni mərkəzləşdirmək */
+text-transform: uppercase;            /* Böyük hərflərlə yazı */
+line-height: 1.5;                     /* Sətir aralığı */
+letter-spacing: 1px;

@@ -1,0 +1,16 @@
+/* Fokus zamanı (klaviatura ilə seçiləndə) */
+input:focus, button:focus, a:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 3px;
+}
+
+/* Aktiv element */
+input:active {
+  border-color: #0056b3;
+}
+
+/* Disabled (aktiv olmayan element) */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
