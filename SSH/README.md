@@ -1,4 +1,3 @@
-** SSH **
 ```
 # Yeni SSH acari yaradir
 ssh-keygen -t ed25519 -C "sadiposeidon@gmail.com"
