@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rəngDəyiş {
+  0% { background-color: #e74c3c; }
+  50% { background-color: #f1c40f; }
+  100% { background-color: #2ecc71; }
+}
+.qutu {
+  width: 100px;
+  height: 100px;
+  animation: rəngDəyiş 3s infinite alternate;
+  border-radius: 10px;
+}

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e0e0e0;
+  text-align: center;
+  margin-top: 40px;
+}
+.track {
+  position: relative;
+  width: 90%;
+  height: 60px;
+  background: #fff;
+  border: 2px solid #000;
+  margin: 15px auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.car {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: left 0.1s;
+}
+.finish {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background: red;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #2ecc71;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background: #27ae60;
+}
+input {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#winner {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}

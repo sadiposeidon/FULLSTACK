@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Document</title>
+</head>
+<body>
+
+<h1>🏁 Maşın Yarışı Oyunu 🏎️</h1>
+
+<div id="inputs">
+  <p>Maşın adlarını yaz:</p>
+  <input type="text" id="car1" placeholder="Maşın 1">
+  <input type="text" id="car2" placeholder="Maşın 2">
+  <input type="text" id="car3" placeholder="Maşın 3">
+  <input type="text" id="car4" placeholder="Maşın 4">
+  <input type="text" id="car5" placeholder="Maşın 5">
+  <br><br>
+  <button onclick="startRace()">Başla 🚦</button>
+</div>
+
+<div id="raceArea" style="display:none;">
+  <div class="track"><div class="car" id="c1" style="background:#e74c3c;">A</div><div class="finish"></div></div>
+  <div class="track"><div class="car" id="c2" style="background:#3498db;">B</div><div class="finish"></div></div>
+  <div class="track"><div class="car" id="c3" style="background:#2ecc71;">C</div><div class="finish"></div></div>
+  <div class="track"><div class="car" id="c4" style="background:#f1c40f;">D</div><div class="finish"></div></div>
+  <div class="track"><div class="car" id="c5" style="background:#9b59b6;">E</div><div class="finish"></div></div>
+</div>
+
+<div id="winner"></div>
+<button id="restartBtn" style="display:none; background:#f39c12;">🔁 Yenidən Başla</button>
+
+</body>
+<script src="./main.js"></script>
+</html>

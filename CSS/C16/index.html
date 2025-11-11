@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles.css">
+	<title>Document</title>
+</head>
+<body>
+
+<h1>⏳ Random Qum Saatı Oyunu - Rəngli</h1>
+
+<div id="inputs">
+  <p>Qum saatları üçün adları yaz:</p>
+  <input type="text" id="q1" placeholder="Qum 1">
+  <input type="text" id="q2" placeholder="Qum 2">
+  <input type="text" id="q3" placeholder="Qum 3">
+  <input type="text" id="q4" placeholder="Qum 4">
+  <input type="text" id="q5" placeholder="Qum 5">
+  <br><br>
+  <button onclick="startGame()">Başla ⏳</button>
+</div>
+
+<div id="gameArea" style="display:none;">
+  <div id="tracks">
+    <div>
+      <div class="track-name" id="n1">Q1</div>
+      <div class="track"><div class="sand" id="s1"></div></div>
+    </div>
+    <div>
+      <div class="track-name" id="n2">Q2</div>
+      <div class="track"><div class="sand" id="s2"></div></div>
+    </div>
+    <div>
+      <div class="track-name" id="n3">Q3</div>
+      <div class="track"><div class="sand" id="s3"></div></div>
+    </div>
+    <div>
+      <div class="track-name" id="n4">Q4</div>
+      <div class="track"><div class="sand" id="s4"></div></div>
+    </div>
+    <div>
+      <div class="track-name" id="n5">Q5</div>
+      <div class="track"><div class="sand" id="s5"></div></div>
+    </div>
+  </div>
+</div>
+
+<div id="winner"></div>
+<button id="restartBtn" style="display:none; background:#f39c12;">🔁 Yenidən Başla</button>
+
+</body>
+<script src="./main.js"></script>
+</html>
