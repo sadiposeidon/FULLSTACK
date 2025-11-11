@@ -17,6 +17,7 @@ mv fayl1 yeni_yer    	# Fayli/kataloqu kocurur veya adini deyisir
 rm fayl               	# Fayli silir
 rm -r qovluq          	# Qovlugu ve icindekileri silir
 mkdir qovluq           	# Yeni qovluq yaradir
+mv *.css qovluq 	# Mövcud CSS fayllarını qovluğuna köçür
 rmdir qovluq           	# Bos qovlugu silir
 touch fayl             	# Yeni bos fayl yaradir
 cat fayl               	# Faylin icini gosterir
@@ -27,7 +28,6 @@ tail -f fayl           	# Fayla realtime baxmaq (log fayllari ucun)
 chmod 755 fayl         	# Faylin icazelerini deyisir
 chown user:group fayl  	# Faylin sahibini deyisir
 find . -name "fayl*"   	# Cari qovluq ve icindeki qovluqlarda fayl axtarir
-grep "text" fayl       	# Faylda text axtarir
 df -h                  	# Disk bolmelerini ve bos yerleri gosterir
 du -sh qovluq           # Qovlugun olcusunu gosterir
 ps aux                 	# Cari prosesleri gosterir
@@ -40,6 +40,13 @@ scp fayl user@host:/yol	# Fayli uzaq servere kopyalayir
 history                	# Əvvəlki komandaları gosterir
 clear                  	# Terminali temizleyir
 
+find . -type d -empty   	# Boş qovluqları tapır
+-exec touch {}/.gitkeep \; 	# Hər boş qovluğun içinə .gitkeep faylı yaradır
+
+find . -type f -name ".gitkeep" # Faylı tapırıq
+
+grep "text" fayl       	# Faylda text axtarir
+grep "error" log.txt 	# Faylda axtarış
 
 ** SSH **
 # Yeni SSH acari yaradir
