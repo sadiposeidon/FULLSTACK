@@ -1,4 +1,4 @@
-** LINUX **
+```
 mkdir   # Qovluq yaradir
 cd      # Qovluqa daxil olur
 touch   # Yeni fayl yaradir
@@ -47,3 +47,4 @@ find . -type f -name ".gitkeep" # Faylı tapırıq
 
 grep "text" fayl        # Faylda text axtarir
 grep "error" log.txt    # Faylda axtarış
+```
