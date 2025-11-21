@@ -1,0 +1,420 @@
+🔷 Layihənin Baş Tələbləri
+
+Layihə tam olaraq JavaScript ekosistemi ilə hazırlanmalıdır.
+
+Frontend: React
+
+Backend: Nodejs (Express)
+
+Database: Sqlite
+
+ORM: Sequelize
+
+Real-time: WebSocket / Socket.IO
+
+File sistemi: S3 uyumlu storage
+
+Python, PHP, C#, Java, TypeScript İSTİFADƏ EDİLMƏYƏCƏK.
+
+Bütün CRUD əməliyyatları real-time yenilənməlidir.
+
+🔷 Bölmələr
+
+Aşağıdakı bütün sistemlər funksional şəkildə yaradılmalıdır:
+
+🔵 KASSA MODULU (POS)
+İstifadəçi girişi və icazələr
+
+RBAC tam tətbiq olunmalıdır.
+
+Səlahiyyəti yüksək olan bütün obyektlərin stokunu görə bilir.
+
+Səlahiyyəti aşağı olan yalnız öz obyektinin stokunu görür.
+
+Məhsul seçimi pəncərəsi
+
+Hər məhsul üçün:
+
+WebP şəkil
+
+Ad
+
+Barkod
+
+Topdan qiymət
+
+Fərdi qiymət
+
+Pərakəndə qiymət
+
+Obyektlərə görə stok
+
+Real-time async yenilənmə (idarə paneli dəyişdikdə POS-da dərhal görünsün)
+
+Axtarış:
+
+Inputa hər simvol daxil edildikdə avtomatik filter
+
+Infinite scroll:
+
+İlk 10 yükələnsin
+
+Aşağı scroll → 5 əlavə
+
+Ekranda köhnə 5 itirilsin
+
+Yuxarı scroll → əvvəlki 5 geri gəlsin
+
+Sonuncu yenilənən itirilsin
+
+Müştəri seçimi
+
+Ad
+
+Soyad
+
+Mağaza adı
+
+Nömrə
+
+Qalıq borc
+
+Double click → detallı görünüm
+
+Fakturalar
+
+Fakturaya double click → məhsul detalları
+
+Satış/İadə növü
+
+Topdan / fərdi / pərakəndə
+
+Kassa boşdursa seçim açıqdır
+
+Kassada məhsul varsa seçim kilidlənir
+
+Kassa ekranı
+
+Məhsulun bütün məlumatları
+
+Real-time yenilənmə
+
+Kassa qeydləri
+
+Silinən məhsullar silinənlər siyahısına düşür
+
+Yüksək səlahiyyət total silə bilər
+
+Endirim icazələri
+
+Shift management
+
+Silinən faktura və məhsul logları
+
+Kritik stok xəbərdarlığı
+
+Müştəri kredit limit sistemi
+
+Müştəriyə görə avtomatik faiz sistemi
+
+Faktura əsasında iade
+
+Elektron faktura (PDF)
+
+Gün sonu hesabatı (Z report)
+
+İşçi maaşı, bonus, zərər və s.
+
+Hotkeys
+
+F2 – məhsul axtarışı
+
+F3 – müştəri seçimi
+
+F4 – kassa təmizlə
+
+F7 – faktura çap
+
+Ödəniş növləri
+
+Nağd
+
+Kart (POS)
+
+Bonus
+
+Qarışıq ödəniş (nağd + kart + bonus)
+
+Borca əlavə etmək
+
+Kassa çap sistemi
+
+Termal printer
+
+Logo / ünvan / telefon konfiqurasiyası
+
+Təkrar çap
+
+Bonus sistemləri
+
+İşçiyə görə bonus (faiz)
+
+Müştərinin keçmiş alışlarına görə bonus
+
+Müştəri qrupları
+
+Topdan
+
+Fərdi
+
+Pərakəndə
+
+VIP
+
+Problemli müştəri
+
+Sürətli məhsul
+
+Barkod yoxdursa müvəqqəti məhsul
+
+Suspend / Resume sales
+
+Satışı saxla → sonra davam et
+
+Endirim limiti
+
+Kassirin maksimum endirim faizi
+
+Limit aşdıqda → admin təsdiqi
+
+🔵 İDARƏ PANELİ
+İdarəçi giriş və icazələr
+Məhsullar
+
+Yeni məhsul yarat
+
+Redaktə et
+
+Axtarış
+
+Infinite scroll (POS-la eyni mexanizm)
+
+Şəkil WebP-ə avtomatik çevrilsin
+
+Node.js → sharp library
+
+Məhsulun çox barkodlu olması
+
+Bir məhsul → bir neçə barkod
+
+Sənədlər
+
+Təchizatçıdan qəbul
+
+Təchizatçıya qaytarma
+
+Obyektlər arası məhsul transferi
+
+Sənəd məlumatları:
+
+Obyekt
+
+Təchizatçı
+
+Tarix
+
+Avtomatik faktura nömrəsi
+
+Bir sənəddə çox məhsul
+
+Hesabatlar
+
+İstifadəçi hesabatı
+
+Müştəri hesabatı
+
+Məhsul hesabatı
+
+Faktura hesabatı
+
+Xərc hesabatı
+
+Dashboard: charts, analitika
+
+Obyekt qalıqları (infinite scroll + instant search)
+
+Elektron faktura / barkod PDF generasiyası
+Kritik stok
+Xərclər modulu
+Log sistemləri
+
+İstifadəçi logları
+
+Məhsul logları
+
+Müştəri logları
+
+Xərc logları
+
+Faktura logları
+
+Giriş limit logları
+
+Sessiya logları
+
+Inventar (sayım)
+
+Sayım fərqlərinin təsdiqlənməsi
+
+Yüksək səlahiyyətlə stok düzəlişi
+
+Rol bazlı icazələr (RBAC)
+
+Hər əməliyyat ayrıca icazəyə bağlıdır:
+
+Məhsul silmək
+
+Endirim etmək
+
+Faktura açmaq
+
+İadə yaratmaq
+
+Obyekt görmək
+
+Stok dəyişmək
+
+və s.
+
+Qara siyahı
+
+IP ban
+
+İstifadəçi ban
+
+Müştəri ban
+
+Məhsulu deaktiv etmək
+
+Hesabatlar
+
+Günlük/aylıq satış
+
+Top məhsullar
+
+Debitor siyahısı
+
+Kassa dövriyyəsi
+
+Obyekt performansı
+
+Cron job sistemi
+
+Günlük avtomatik hesabat
+
+Kritik stok alert
+
+Gecikmiş ödəniş haqqında bildiriş
+
+Backup / Restore
+
+Avtomatik günlük backup
+
+Admin paneldən backup import/export
+
+Aktiv sessiyaların idarəsi
+
+Admin istifadəçi sessiyasını bitirə bilər
+
+Sesiyanın logu yazılır
+
+Satıcı / kassir performansı
+
+Satış məbləği
+
+Verilən endirimlər
+
+İşçinin gətirdiyi zərər
+
+İtki / Fire / Amortizasiya
+
+Stok azalmaları ayrıca modulda
+
+Alış qiyməti tarixçəsi
+
+Təchizatçılara görə dəyişən qiymətlər
+
+İşçi məlumatları
+
+Maaş
+
+İstirahət günü bonusu
+
+Əmək haqqından avtomatik çıxılma
+
+Avans
+
+Bonuslar
+
+🔷 Agentdən gözləntilər
+
+Sən aşağıdakı prinsiplərə uyğun işləməlisən:
+
+1. Kod strukturlaşdırması
+
+Backend/Frontend tam modul şəkildə olmalıdır.
+
+Naming standard-ları: camelCase, PascalCase, snake_case uyğun yerlərdə.
+
+DTO, Service, Controller, Entity, Repository strukturu dəqiq olmalıdır.
+
+2. Real-time sistem
+
+Socket.io kanalları:
+
+product_updated
+
+stock_updated
+
+invoice_created
+
+... və s.
+
+3. Təhlükəsizlik
+
+JWT + Refresh token
+
+RBAC
+
+Rate limiting
+
+Brute force login limit
+
+IP ban sistemi
+
+Activity/Security logları
+
+4. Performans
+
+Pagination + infinite scroll
+
+Lazy loading
+
+Redis caching
+
+Load balancing-ready arxitektura
+
+5. Fayl strukturu
+
+Agent kod yaradarkən aşağıdakı standartlara riayət etsin:
+/backend
+
+/frontend
+  /src
+    /components
+    /pages
+    /context
+    /hooks
+    /services
+
+seeds ilə bir neçə məlumat əlavə edək

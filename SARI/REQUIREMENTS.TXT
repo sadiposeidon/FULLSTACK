@@ -1,0 +1,206 @@
+MƏNƏ CURSOR 2 ÜÇÜN PROMPT HAZIRLA. PROYEKTİN MƏLUMATLARIN YAZIRAM SƏNƏ. 
+
+KASSA
+    İSTİFADƏÇİ GİRİŞİ
+    İSTİFADƏÇİ SƏLAHİYYƏTLƏRİ, MƏHDUDİYYƏTLƏRİ
+        MƏHSUL SİLMƏK, REDAKTƏ ETMƏK, KASSA EKRANI TƏMİZLƏMƏK
+        SƏLAHİYYƏTİ YÜKSƏK OLAN ŞƏXS BÜTÜN OBYEKTLƏRƏ GÖRƏ STOKU GÖRƏ BİLSİN, SƏLAHİYYƏTİ AŞAĞI OLAN ŞƏXS ANCAQ TƏYİN EDİLƏN OBYEKTİNDƏKİ STOKU GÖRƏ BİLSİN
+    SİYAHIDAN MƏHSUL SEÇMƏK
+        MƏHSUK WEBP FORMATINDAKI ŞƏKLİ
+        MƏHSUL ADI
+        MƏHSUL BARKODU
+        MƏHSUL TOPDAN QİYMƏTİ
+        MƏHSUL FƏRDİ QİYMƏTİ
+        MƏHSUL PƏRAKƏNDƏ QİYMƏTİ
+        MƏHSUL OBYEKTLƏRƏ GÖRƏ STOKU
+        MƏLUMATLAR ASYNC YENİLƏNƏ BİLSİN (İDARƏ PANELİNDƏ EDİLDİKDƏ BU OƏNCƏRƏYƏ DƏ YANSISIN)
+        QEYD 1: MƏHSULUN HƏR HANSI MƏLUMATI YAZILDIQDA AXTARIŞ ETMƏK OLSUN. AXTARIŞ HƏR HANSI SİMVOL DAXİL EDİLDİKDƏ AVTOMATİK EDİLİR.
+        QEYD 2: BU PƏNCƏRƏ İLK AÇILDIQDA İLK 10 MƏHSUL GƏLƏCƏK, SCROLL AŞAĞI DÜŞDÜKCƏ 5 MƏHSUL DAHA GƏLƏCƏK ANCAQ İLK 5 MƏHSUL PƏNCƏRƏDƏN İTƏCƏK, SCROL YUXARI QALXDIQCA ƏVVƏLKİ 5 MƏHSUL YENİDƏN GƏLƏCƏK ANCAQ SON YÜKLƏNƏ MƏHSUL İTƏCƏK.
+    MÜŞTƏRİ SEÇİMİ
+        MÜŞTƏRİ ADI
+        MÜŞTƏRİ SOYADI
+        MÜŞTƏRİ MAĞAZA ADI
+        MÜŞTƏRİ ƏLAQƏ NÖMRƏSİ
+        MÜŞTƏRİ QALIQ BORCU
+        QEYD 1: ÜZƏRİNƏ İKİ DƏFƏ KLİK ETDİKDƏ DETALLI MƏLUMATLARI ÇIXIR
+            ÖRNƏK: FAKTURALARI (FAKTURA KODU, SATIŞ QİYMƏTİ, EDİLƏN ENDİRİM SUMMASI, EDİLƏN ENDİRİM FAİZİ, FAKTURADAKI MALLARIN SAYI, O GÜNƏ KİMİ OLAN BORCU)
+                    FAKTURALARA İKİ DƏFƏ KLİK ETDİKDƏ GÖTÜRDÜYÜ MƏHSULLAR ÇIXIR
+    SATIŞ, İADƏ NÖVÜ (TOPDAN, FƏRDİ, PƏRAKƏNDƏ)
+        QEYD 1: KASSADA HƏR HANSI MƏHSUL YOXDURSA BU SEÇİMƏ GÖRƏ ADI VƏ YAXUD BARKODU OXUNAN VƏ YAXUD SİYAHIDAN SEÇİLƏN MƏHSULUN QİYMƏTİ TƏYİN EDİLƏCƏK.
+        QEYD 2: KASSAYA GİRİLƏN HƏR HANSI MƏHSUL VAR İSƏ SATIŞ, İADƏ NÖVÜ QAPADILACAQ Kİ, QARIŞIQLILIQ YARANMASI
+        QEYD 3: KASSADA HƏR HANSI MƏHSUL YOXDURSA YENİDƏN SATIŞ, İADƏ NÖVÜ TƏYİN EDİLƏ BİLİNSİN
+    KASSANI TƏMİZLƏ DÜYMƏSİ
+    YENİ KASSA AÇMAQ OLSUN.
+        BELƏ Kİ, MÜŞTƏRİ HƏLƏ YENƏ MƏHSUL SEÇİMİ EDƏCƏKSƏ SATIŞ VƏ YAXUD İADƏ DAYANMASIN DEYƏ BAŞQA KASSA EKRANI AÇMAQ OLSUN.
+    KASSA EKRANI:
+        MƏHSUK WEBP FORMATINDAKI ŞƏKLİ
+        MƏHSUL ADI
+        MƏHSUL BARKODU
+        MƏHSUL TOPDAN QİYMƏTİ
+        MƏHSUL FƏRDİ QİYMƏTİ
+        MƏHSUL PƏRAKƏNDƏ QİYMƏTİ
+        MƏHSUL OBYEKTLƏRƏ GÖRƏ STOKU
+        MƏLUMATLAR ASYNC YENİLƏNƏ BİLSİN (İDARƏ PANELİNDƏ EDİLDİKDƏ BU OƏNCƏRƏYƏ DƏ YANSISIN)
+
+    KASSA QEYD:
+        MƏLUMATLARI REDAKTƏ EDİLDİKDƏ ASYNC GÜNCƏLLƏNSİN
+        MƏHSUL SİLİNDİKDƏ SİLİNƏNLƏR SİYAHISINA DÜŞSÜN. TAM SİLİNMƏ BURADAN SƏLAHİYYƏTİ YÜKSƏK OLAN ŞƏXS TƏK VƏ YAXUD TOPLU SİLSİN.
+        Endirim etmə icazəsi (faiz və ya məbləğ)
+        Kassa bağlama / açma icazəsi (shift management)
+        KASSA EKRANINDAN SİLİNƏN MƏHSUL VƏ YAXUD SİLİNƏN, LƏĞV EDİLƏN FAKTURA LOG SİYAHISINA ALINSIN YƏNİ HƏM MƏHSUL HƏM DƏ FAKTURA AYRICA QEYDİYYATA ALINSIN
+        Stok kritik səviyyədədirsə xəbərdarlıq. MƏHSUL QEYDDİYYATA ALINARKƏN VERİLƏN SAYA ÇATDIQDA ÖRNƏK STOKU 0 DIR BİZ İZƏ ƏLDƏ VAR DEYƏ SATIŞ EDƏCİYİK BU ZAMAN XƏBƏRDARLIQ SƏSİ GƏLİR VƏ BİLDİRİŞİ. BİZƏ YENƏ DƏ SATIŞ EDİLSİN Mİ DEYƏ SORUŞUR.
+        Müştərinin kredit limiti
+        MÜŞTƏRİYƏ GÖRƏ FAKTURAYA ƏSASƏN AVTOMATİK FAİZ SİSTEMİ
+        MÜŞTƏRİYƏ GÖRƏ MƏHSULA ƏSASƏN AVTOMATİK FAİZ SİSTEMİ
+        İadə zamanı ekranda faktura kodu daxil edin deyir fakturaya əsasən iadə edilir məhsullar neçə qiyymətlə satılıbsa elə də iadə edilir, əgər faktura yoxdursa normal iadə edilir
+        Elektron faktura (PDF generasiyası)
+        Gün sonu hesabatı (Z-report)
+        İŞÇİYƏ VERİLƏN MAAŞLAR, İŞÇİNİN VERDİYİ ZƏRƏR, İŞÇİNİN ALDIĞI MƏHSUL, İŞÇİYƏ VERİLƏN AVANS, İŞƏ GƏLMƏDİYİ GÜN MAAŞDAN ÇIXILACAQ
+        İŞÇİ YARADILARKƏN MAAŞI DA TƏYİN EDİLƏCƏK GƏLMƏDİYİ GÜN O GÜN AVTOMATİK MAAŞINDAN ÇIXILACAQ, İSTİRAHƏR GÜNÜ GƏLİBSƏ MAAŞINA AVTOMATİK BONUS GƏLƏCƏL
+        İŞÇİYƏ BONUS
+        SƏLAHİYYƏTLİ ŞƏXS SƏNƏDLƏRƏ (FAKTURALARA BAXİB CRUD ƏMƏLİYYATI EDƏ BİLSİN)
+
+    Kassa sürətli qısa düymələr (hotkeys)
+        F2 – məhsul axtarışı
+        F3 – müştəri seçimi
+        F4 – kassa təmizlə
+        F7 – faktura çap
+
+    Ödəniş növləri modulu (vacibdir)
+        Nağd ödəniş
+        Kart ödəniş (POS terminal)
+        Bonus ödəniş
+        Bir hissəsi bonus + nağd + bir hissəsi kart olan qarışıq ödəniş
+        Müştəri borcuna əlavə etmək
+
+    Kassa Çap sistemi
+        Termal printerə avtomatik qəbz çıxarma
+        Qəbzin dizayn parametrləri (logo, telefon, ünvan)
+        Qəbzin yenidən çap edilməsi
+
+    İŞÇİYƏ BONUS (HƏR HANSI BİR MƏHSUL VƏ YAXUD FAKTURA İŞÇİYƏ İŞLƏNİLSİN BONUS OLARAQ)
+        QEYD: BONUS FAİZİ İŞÇİ MƏLUMATINDA QEYD EDİLSİN Kİ, BUNA ƏSASƏN BONUS OLACAQ.
+
+    Müştərinin alış tarixçəsinə əsasən BONUS sistemi
+        Ümumi alış məbləğinə görə bonus bal
+        Bonusla ödəniş etmək (QALIQ NƏĞD, KART VƏ YAXUD BORC OLA)
+
+    Müştəri qrupları
+        Topdan
+        Fərdi
+        PƏRAKƏNDƏ
+        VIP
+        Problemli müştəri
+
+    Barkod yoxdursa “Sürətli məhsul” əlavə etmək
+        Yeni barkod gələnə qədər müvəqqəti məhsul satmaq imkanı.
+
+    Satış xatırlatma (Suspend / Resume Sales)
+        Satışı dayandır və saxla
+        Sonra geri qayıt və davam et
+
+    Kassa üçün endirim limiti
+        Kassir maksimum neçə % endirim edə bilər
+        Limitdən yuxarı endirim → admin təsdiqi istənilir
+
+İDARƏ PANELİ
+    İDARƏÇİ GİRİŞİ
+    İDARƏÇİ SƏLAHİYYƏTLƏRİ
+    MƏHSULLAR (YENİ MƏHSUL YARATMAQ VƏ ÜMUMİ MƏHSULLARI GÖRMƏK, AXTARIŞ ETMƏK, REDAKTƏ ETMƏK V.S)
+        QEYD 1: MƏHSUL MƏLUMATINDA ŞƏKİL İŞLƏNƏRKƏN HƏR HANSI FORMAT AVTOMATİK WEBP FORMATINA ÇEVRİLMƏLİDİR
+        QEYD 2: BU PƏNCƏRƏ İLK AÇILDIQDA İLK 10 MƏHSUL GƏLƏCƏK, SCROLL AŞAĞI DÜŞDÜKCƏ 5 MƏHSUL DAHA GƏLƏCƏK ANCAQ İLK 5 MƏHSUL PƏNCƏRƏDƏN İTƏCƏK, SCROL YUXARI QALXDIQCA ƏVVƏLKİ 5 MƏHSUL YENİDƏN GƏLƏCƏK ANCAQ SON YÜKLƏNƏ MƏHSUL İTƏCƏK.
+
+    Məhsulun çox barkodlu olması
+        Bir məhsulun birdən çox barkodu ola bilər (vacibdir).
+
+    SƏNƏDLƏR
+        TƏCHİZATÇIDAN MƏHSUL QƏBULU
+        TƏCHİZATÇIYA MƏHSUL İADƏSİ
+        OBYEKTLƏR ARASI MƏHSULUN YER DƏYİŞMƏSİ
+            Yoxlayaraq və yaxud ümumi qəbul təstiqi
+        QEYD 1: SƏNƏDLƏRDƏ OBYEKT, TƏCHİZATÇI, TARİX, FAKTURA NÖMRƏSİ (AVTOMATİK) BİLDİRİLMƏLİDİR
+        QEYD 2: BİR SƏNƏDDƏ BİR ÇOX MƏHSUL MÜMKÜNLÜYÜ
+            MƏHSUL ADI, SAYI, GƏLİŞ QİYMƏTİ
+    HESABAT
+        İSTİFADƏÇİ HESABATI
+        MÜŞTƏRİ HESABATI
+        MƏHSUL HESABATI
+        FAKTURA HESABATI
+        XƏRC HESABATI
+        Real-time dashboard (charts, satış analitikası)
+        MALLARIN HƏRƏKƏT CƏDVƏLİ
+        OBYEKT QALIQLARINI GÖRMƏK
+            MƏHSUL ADI, TOPDAN, FƏRDİ, PƏRAKƏNDƏ VƏ GƏLİŞ (TƏCHİZATÇIDAN ALINAN QİYMƏT) QİYMƏTİ OBYEKTLƏRDƏKİ STOKU
+            QEYD 1: MƏHSULUN HƏR HANSI MƏLUMATI YAZILDIQDA AXTARIŞ ETMƏK OLSUN. AXTARIŞ HƏR HANSI SİMVOL DAXİL EDİLDİKDƏ AVTOMATİK EDİLİR.
+            QEYD 2: BU PƏNCƏRƏ İLK AÇILDIQDA İLK 10 MƏHSUL GƏLƏCƏK, SCROLL AŞAĞI DÜŞDÜKCƏ 5 MƏHSUL DAHA GƏLƏCƏK ANCAQ İLK 5 MƏHSUL PƏNCƏRƏDƏN İTƏCƏK, SCROL YUXARI QALXDIQCA ƏVVƏLKİ 5 MƏHSUL YENİDƏN GƏLƏCƏK ANCAQ SON YÜKLƏNƏ MƏHSUL İTƏCƏK.
+    Elektron faktura (PDF generasiyası)
+    Elektron barkod (PDF generasiyası)
+    Kritik stok xəbərdarlıqları
+    Xərclər modulu
+    LOGLAR
+        İSTİFADƏÇİ LOGLARI
+        MƏHSUL LOGLARI
+        MÜŞTƏRİ LOGLARI
+        XƏRC LOGLARI
+        FAKTURA LOGLARI
+        GİRİŞ LİMİTİ
+
+    Inventar (sayım) modulu
+    Sayım zamanı fərqlərin təsdiqlənməsi
+    Stok düzəlişi (YÜKSƏK SƏLAHİYYƏTƏ GÖRƏ)
+
+    Rol bazlı icazələr (RBAC)
+    Hər funksiyaya ayrıca icazə:
+        Məhsul silmək
+        Endirim etmək
+        Faktura açmaq
+        İadə yaratmaq
+        Obyekt görmək
+        Stok dəyişmək
+    Giriş Logları
+    Səlahiyyət qrupları
+
+    PARAMETRLƏR
+        GİRİŞ LİMİTİ AŞIM SAYI (VAXT AŞIMI)
+
+    QARA SIYAHI
+        IP BAN
+        İSTİFADƏÇİ BAN
+        MÜŞTƏRİ BAN
+        MƏHSULU DEAKTİV ETMƏK (MƏHSULLAR SİYAHISINDA GÖRÜLÜR ANCAQ HEÇBİR FAKTURA ÜÇÜN KEÇƏRLİ OLMUR YƏNİ MƏLUMARLARI İLƏ TAPMIR MALI)
+
+    Hesabatlar Modulu
+        Günlük/aylıq satış
+        Top məhsullar
+        Debitor siyahısı
+        Kassa dövriyyəsi
+        Obyektlərin performansı
+
+    Cron job sistemi
+        Günlük avtomatik hesabat mesajı
+        Kritik stok xəbərdarlığı
+        Ödəniş gecikmələri haqqında və yaxud verilən vaxt dolduqda idarəçiyə məlumat
+
+    Backup & Restore sistemi
+        Hər gün avtomatik backup
+        Admin paneldən backup yükləmək
+
+    Aktiv sessiyaların idarəsi
+        Admin istənilən istifadəçinin aktiv sessiyasını sonlandıra bilsin. Sesiya sonlandıqda log qeydiyyatına düşsün məhsullar və faktura.
+
+    Satıcı / Kassir performans hesabatı
+        Hər kassir nə qədər satış edib, nə qədər endirim verib və s.
+
+    İtki (Loss) və Fire (Amortizasiya) hesabatı
+        Sındı, itdi, tarixi keçdi – bu tip stok azalmaları ayrıca qeydə alınmalıdır.
+
+    Alış qiyməti tarixçəsi
+        Eyni məhsulun təchizatçılardan fərqli tarixlərdə alınmış qiymətlərini saxlamaq.
+
+        İŞÇİ MƏLUMATLARI
+            İŞÇİYƏ VERİLƏN MAAŞLAR, İŞÇİNİN VERDİYİ ZƏRƏR, İŞÇİNİN ALDIĞI MƏHSUL, İŞÇİYƏ VERİLƏN AVANS, İŞƏ GƏLMƏDİYİ GÜN MAAŞDAN ÇIXILACAQ
+            İŞÇİ YARADILARKƏN MAAŞI DA TƏYİN EDİLƏCƏK GƏLMƏDİYİ GÜN O GÜN AVTOMATİK MAAŞINDAN ÇIXILACAQ, İSTİRAHƏR GÜNÜ GƏLİBSƏ MAAŞINA AVTOMATİK BONUS GƏLƏCƏL
+            İŞÇİYƏ BONUS
+
+QEYD 1: BÜTÜN CRUD ƏMƏLİYYATLARI REAL-TİME OLACAQ!
+QEYD 2: PROYEKT BAŞDAN SONRA JS TEXNALOGİYALARI İLƏ KODLANACAQ.
