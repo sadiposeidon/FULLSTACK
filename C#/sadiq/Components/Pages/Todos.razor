@@ -1,0 +1,44 @@
+﻿@page "/todos"
+
+<h3>Todo List (API request)</h3>
+
+@if (todos == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (var t in todos.Take(50))
+        {
+            <li>
+                <strong>ID:</strong> @t.Id <br />
+                <strong>Title:</strong> @t.Title <br />
+                <strong>Completed:</strong> @t.Completed
+                <hr />
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Todo>? todos;
+
+    [Inject]
+    public HttpClient Http { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        todos = await Http.GetFromJsonAsync<List<Todo>>(
+            "https://jsonplaceholder.typicode.com/todos"
+        );
+    }
+
+    public class Todo
+    {
+        public int UserId { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; } = "";
+        public bool Completed { get; set; }
+    }
+}

@@ -1,0 +1,75 @@
+@page "/clock2"
+
+<div style="width:300px; height:300px; display:flex; justify-content:center; align-items:center;">
+    <svg width="250" height="250" viewBox="0 0 100 100" style="background-color:white; border-radius:50%; border:2px solid black;">
+
+        <!-- Outer circle -->
+        <circle cx="50" cy="50" r="48" stroke="black" stroke-width="1" fill="white" />
+
+        <!-- Numbers -->
+        @for (int i = 1; i <= 12; i++)
+        {
+            var angle = (i * 30 - 90) * Math.PI / 180;
+            var x = 50 + 35 * Math.Cos(angle);
+            var y = 50 + 35 * Math.Sin(angle);
+
+            <svg:text x="@x" y="@y" font-size="6" fill="black" 
+                      text-anchor="middle" dominant-baseline="middle">
+                @i
+            </svg:text>
+        }
+
+        <!-- Center "SADIQ" -->
+        <svg:text x="50" y="60" font-size="6" fill="black" 
+                  text-anchor="middle" dominant-baseline="middle">
+            SADIQ
+        </svg:text>
+
+        <!-- Tick marks -->
+        @for (int i = 0; i < 60; i++)
+        {
+            var angle = i * 6 * Math.PI / 180;
+
+            var inner = i % 5 == 0 ? 40 : 44;
+            var outer = 46;
+
+            var x1 = 50 + inner * Math.Sin(angle);
+            var y1 = 50 - inner * Math.Cos(angle);
+            var x2 = 50 + outer * Math.Sin(angle);
+            var y2 = 50 - outer * Math.Cos(angle);
+
+            <line x1="@x1" y1="@y1" x2="@x2" y2="@y2"
+                  stroke="black" stroke-width="@(i % 5 == 0 ? 1 : 0.4)" />
+        }
+
+        <!-- Hands -->
+        <line x1="50" y1="50" x2="@HourX" y2="@HourY" stroke="black" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="50" y1="50" x2="@MinuteX" y2="@MinuteY" stroke="black" stroke-width="0.8" stroke-linecap="round"/>
+        <line x1="50" y1="50" x2="@SecondX" y2="@SecondY" stroke="red" stroke-width="0.5" stroke-linecap="round"/>
+
+        <!-- Center dot -->
+        <circle cx="50" cy="50" r="1.2" fill="black"/>
+    </svg>
+</div>
+
+@code {
+    private Timer? timer;
+
+    protected override void OnInitialized()
+    {
+        timer = new Timer(_ => InvokeAsync(StateHasChanged), null, 0, 1000);
+    }
+
+    private double HourAngle => (DateTime.Now.Hour % 12) * 30 + DateTime.Now.Minute * 0.5;
+    private double MinuteAngle => DateTime.Now.Minute * 6;
+    private double SecondAngle => DateTime.Now.Second * 6;
+
+    private double HourX => 50 + 18 * Math.Sin(HourAngle * Math.PI / 180);
+    private double HourY => 50 - 18 * Math.Cos(HourAngle * Math.PI / 180);
+
+    private double MinuteX => 50 + 28 * Math.Sin(MinuteAngle * Math.PI / 180);
+    private double MinuteY => 50 - 28 * Math.Cos(MinuteAngle * Math.PI / 180);
+
+    private double SecondX => 50 + 32 * Math.Sin(SecondAngle * Math.PI / 180);
+    private double SecondY => 50 - 32 * Math.Cos(SecondAngle * Math.PI / 180);
+}
