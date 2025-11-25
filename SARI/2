@@ -1,0 +1,242 @@
+Kassa və İdarə Paneli Layihəsi – Tam Xülasə
+1. KASSA MODULU
+İstifadəçi Girişi
+
+İstifadəçi səviyyəsinə görə səlahiyyət və məhdudiyyətlər:
+
+Məhsul silmək, redaktə etmək, kassa ekranını təmizləmək
+
+Yüksək səlahiyyət → bütün obyektlər üzrə stock görmək
+
+Aşağı səlahiyyət → yalnız təyin olunmuş obyekt stockunu görə bilmək
+
+Məhsul Seçimi
+
+WebP formatlı şəkil
+
+Məhsul adı
+
+Barkod
+
+Topdan qiymət, fərdi qiymət, pərakəndə qiymət
+
+Obyektlər üzrə stock
+
+Async yenilənmə (idarə panelində dəyişiklik dərhal yansısın)
+
+Search:
+
+Hər simvol daxil edildikcə avtomatik axtarış
+
+Lazy load:
+
+İlk açılış → 10 məhsul
+
+Scroll aşağı → 5 məhsul əlavə, ilk 5 məhsul itir
+
+Scroll yuxarı → əvvəlki 5 məhsul yenidən gəlir, son yüklənən məhsul silinir
+
+Müştəri Seçimi
+
+Ad, soyad, mağaza adı, əlaqə nömrəsi, qalıq borc
+
+Üzərinə iki dəfə klik → detal məlumatları (fakturalar, məhsullar, borclar)
+
+Satış / İadə
+
+Satış növü: topdan, fərdi, pərakəndə
+
+Məhsul yoxdursa → qiymət avtomatik təyin
+
+Mövcud məhsul varsa → satış/iadə növü deaktiv olur
+
+Yeni məhsul əlavə edilə bilər
+
+Kassa təmizləmə və yeni kassa açma imkanı
+
+Kassa Ekranı
+
+WebP şəkil, məhsul adı, barkod, qiymətlər, obyekt stocku
+
+Async yenilənmə
+
+Endirim (faiz/məbləğ), kassa açma/bağlama
+
+Stok kritik → xəbərdarlıq
+
+Müştəri kredit limiti və avtomatik faiz sistemi
+
+İadə faktura əsaslı, PDF elektron faktura, Z-report
+
+İşçi maaş, bonus, zərər, avans, iş günü avtomatik hesablanması
+
+Hotkeys
+
+F2 – məhsul axtarışı
+
+F3 – müştəri seçimi
+
+F4 – kassa təmizlə
+
+F7 – faktura çap
+
+Ödəniş növləri
+
+Nağd, kart, bonus, qarışıq, müştəri borcu
+
+Çap Sistemi
+
+Termal printer qəbz
+
+Qəbz dizayn parametrləri, yenidən çap
+
+Bonus Sistemi
+
+İşçi bonus → məhsul və ya faktura üzrə
+
+Müştəri bonus → alış tarixçəsinə əsasən
+
+Müştəri qrupları
+
+Topdan, fərdi, pərakəndə, VIP, problemli
+
+Barkod yoxdursa
+
+Sürətli məhsul əlavə etmək
+
+Satış xatırlatma
+
+Suspend / Resume sales
+
+Endirim limiti
+
+Kassir maksimum endirim limiti → admin təsdiqi lazım
+
+2. İDARƏ PANELİ
+İdarəçi Girişi
+
+Səlahiyyətlər: məhsul CRUD, stock, faktura, endirim, istifadəçi və obyekt idarəsi
+
+Məhsullar
+
+Yeni məhsul yaratma, redaktə, axtarış
+
+Şəkil avtomatik WebP formatına çevrilir
+
+Multi-barkod imkanı
+
+Lazy load: ilk 10 məhsul, scroll ilə 5 əlavə
+
+Sənədlər
+
+Təchizatçıdan məhsul qəbulu
+
+Təchizatçıya məhsul iadesi
+
+Obyektlər arası məhsul transferi
+
+Bir sənəddə bir çox məhsul (adı, sayı, qiymət)
+
+Hesabat
+
+İstifadəçi, müştəri, məhsul, faktura, xərclər
+
+Real-time dashboard (charts, analytics)
+
+Malların hərəkət cədvəli, obyekt qalığı
+
+Elektron sənədlər
+
+PDF faktura
+
+PDF barkod
+
+Kritik stok xəbərdarlıqları
+
+Xərclər və Loglar
+
+İstifadəçi logları
+
+Məhsul logları
+
+Müştəri logları
+
+Xərc logları
+
+Faktura logları
+
+Inventar (Sayım)
+
+Sayım fərqlərinin təsdiqi
+
+Stok düzəlişi (yüksək səlahiyyətə görə)
+
+Parametrlər
+
+Giriş limit (vaxt aşımı)
+
+Qara siyahı (IP, istifadəçi, müştəri, məhsul deaktiv)
+
+Cron jobs
+
+Avtomatik gündəlik hesabat
+
+Kritik stok, ödəniş gecikmələri
+
+Backup & restore sistemi
+
+Sessiya idarəsi
+
+Admin istənilən istifadəçinin aktiv sessiyasını sonlandıra bilər
+
+Satıcı / Kassir performans
+
+Hər kassir satış, endirim, bonus statistikası
+
+Loss / Fire / Amortizasiya hesabatı
+
+Sındı, itdi, tarixi keçdi → ayrıca qeyd
+
+Alış qiyməti tarixçəsi
+
+Eyni məhsulun müxtəlif tarixlərdə alınması
+
+İşçi məlumatları
+
+Maaş, zərər, məhsul, avans, bonus, avtomatik istirahət günləri bonus
+
+3. REAL-TIME İŞLƏMƏ
+
+WebSocket / Socket.io: kassa, stock, modal, faktura, endirim
+
+Polling yalnız non-critical report / statistik refresh üçün
+
+4. TEXNOLOGİYA STACK
+
+Frontend: Blazor Web App (C#) + Razor + optional WinForms internal tools
+
+Backend: Node.js microservices (perf, batch processing, worker threads)
+
+Database: PostgreSQL / MongoDB (yükə görə), Redis caching
+
+Storage: WebP şəkillər, PDF generasiya
+
+Real-time: Socket.io
+
+CI/CD & Version Control: GitHub + microservice repository separation
+
+Deployment: Docker + Kestrel / Nginx reverse proxy
+
+5. PERFORMANCE OPTIMIZATIONS
+
+Batch processing → 1000 məhsul/chunk
+
+Worker threads → WebP conversion, PDF generasiya, analytics
+
+Lazy load + virtualized lists
+
+Redis / in-memory caching → tez-tez soruşulan data
+
+Socket.io push → anlıq update
+
+HTTP REST API → report, CRUD, non-critical background data
