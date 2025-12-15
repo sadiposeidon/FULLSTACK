@@ -1,15 +1,14 @@
 ** GIT **
-git@github.com:sadiposeidon/FULLSTACK.git                        >
-git clone https://github.com/sadiposeidon/FULLSTACK.git          >
-git remote set-url origin git@github.com:sadiposeidon/FULLSTACK.g>
-git remote -v                                                    >
+git@github.com:sadiposeidon/FULLSTACK.git
+git clone https://github.com/sadiposeidon/FULLSTACK.git
+git remote set-url origin git@github.com:sadiposeidon/FULLSTACK.git remote -v
 
-git config --global user.name "sadiposeidon"                     >
-git config --global user.email "sadiposeidon@gmail.com"          >
-git config --global --list                                       >
+git config --global user.name "sadiposeidon"
+git config --global user.email "sadiposeidon@gmail.com"
+git config --global --list
 
-git add .                # Butun deyisiklikleri staging-ə elave e>
+git add .                # Butun deyisiklikleri staging-ə elave e
 git commit -m "mesaj"    # Deyisiklikleri commit edir
 git push origin main     # Main branch-i remote-a gonderir
-git push                 # Aktiv branch-i default remote-a gonder>
+git push                 # Aktiv branch-i default remote-a gonder
 
