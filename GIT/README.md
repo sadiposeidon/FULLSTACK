@@ -1,9 +1,9 @@
 <pre>
-1️⃣ Repository-ni klonlamaq
+1. Repository-ni klonlamaq
 SSH ilə klonlama
 git clone git@github.com:sadiposeidon/FULLSTACK.git
-🔹 GitHub-dakı FULLSTACK repository-ni kompüterinə köçürür
-🔹 SSH açarı qurulubsa, şifrə soruşulmur
+GitHub-dakı FULLSTACK repository-ni kompüterinə köçürür
+SSH açarı qurulubsa, şifrə soruşulmur
 </pre>
 
 git clone https://github.com/sadiposeidon/FULLSTACK.git
