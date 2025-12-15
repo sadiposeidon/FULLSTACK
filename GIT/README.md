@@ -12,3 +12,14 @@ git commit -m "mesaj"    # Deyisiklikleri commit edir
 git push origin main     # Main branch-i remote-a gonderir
 git push                 # Aktiv branch-i default remote-a gonder
 
+git status
+git pull
+
+git fetch
+
+git show <commit-id>
+
+git log --stat
+
+git log HEAD..origin/main --oneline
+git log origin/main --oneline
