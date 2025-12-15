@@ -1,4 +1,4 @@
-** GIT **
+** 1. Repository-ni klonlamaq **
 git@github.com:sadiposeidon/FULLSTACK.git
 git clone https://github.com/sadiposeidon/FULLSTACK.git
 git remote set-url origin git@github.com:sadiposeidon/FULLSTACK.git remote -v
