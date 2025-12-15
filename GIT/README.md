@@ -1,5 +1,10 @@
-** 1. Repository-ni klonlamaq **
-git@github.com:sadiposeidon/FULLSTACK.git
+1️⃣ Repository-ni klonlamaq
+SSH ilə klonlama
+git clone git@github.com:sadiposeidon/FULLSTACK.git
+🔹 GitHub-dakı FULLSTACK repository-ni kompüterinə köçürür
+🔹 SSH açarı qurulubsa, şifrə soruşulmur
+
+
 git clone https://github.com/sadiposeidon/FULLSTACK.git
 git remote set-url origin git@github.com:sadiposeidon/FULLSTACK.git remote -v
 
