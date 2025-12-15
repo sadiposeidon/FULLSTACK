@@ -1,10 +1,18 @@
 <pre>
-  1. Repository-ni klonlamaq
+  <b>1. Repository-ni klonlamaq</b>
   SSH ilə klonlama
   <b>git clone git@github.com:sadiposeidon/FULLSTACK.git</b>
   GitHub-dakı FULLSTACK repository-ni kompüterinə köçürür
   SSH açarı qurulubsa, şifrə soruşulmur
 </pre>
+
+<pre>
+  <b>2. HTTPS ilə klonlama</b>
+  <b>git clone https://github.com/sadiposeidon/FULLSTACK.git</b>
+  Eyni repository-ni HTTPS üzərindən klonlayır
+  Bəzən token / login istəyə bilər
+</pre>
+
 
 git clone https://github.com/sadiposeidon/FULLSTACK.git
 git remote set-url origin git@github.com:sadiposeidon/FULLSTACK.git remote -v
